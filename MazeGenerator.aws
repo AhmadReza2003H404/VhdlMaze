@@ -1,0 +1,12 @@
+[Version]
+Version=8.3
+[Designs]
+mazegenerator=.\MazeGenerator\MazeGenerator.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+mazegenerator=1
