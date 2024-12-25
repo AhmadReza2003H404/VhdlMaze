@@ -1,0 +1,1 @@
+-w -s "C:\Users\AsusIran\Desktop\MazeGenerator\library.cfg"  -j "C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\projlib.cfg"  -d "C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\compile"   -work work  -O3 -e 100 -2002 "C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd" 

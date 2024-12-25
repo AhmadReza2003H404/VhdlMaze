@@ -1,1 +1,4 @@
 i<>.\src\Maze.vhd
+i<>.\src\Objects.vhd
+i<>.\src\Types.vhd
+i<>.\src\TestBench\mazegen_TB.vhd

@@ -1,0 +1,329 @@
+acom -O3 -work work -2002  $dsn/src/Maze.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd
+# Compile Entity "MazeGen"
+# Error: COMP96_0356: Maze.vhd : (15, 27): Index constraint cannot be applied to constrained type.
+# Compile Architecture "MazeBehv" of Entity "MazeGen"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work work -2002  $dsn/src/Maze.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd
+# Compile Entity "MazeGen"
+# Error: COMP96_0356: Maze.vhd : (15, 27): Index constraint cannot be applied to constrained type.
+# Compile Architecture "MazeBehv" of Entity "MazeGen"
+# Compile failure 1 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work work -2002  $dsn/src/Types.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Types.vhd
+# Compile Package "MazeTypes"
+# Error: COMP96_0263: Types.vhd : (6, 25): Type names are not allowed as primaries.
+# Error: COMP96_0263: Types.vhd : (6, 43): Type names are not allowed as primaries.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -work work -2002  $dsn/src/Types.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Types.vhd
+# Compile Package "MazeTypes"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+acom -O3 -work work -2002  $dsn/src/Maze.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd
+# Compile Entity "MazeGen"
+# Compile Architecture "MazeBehv" of Entity "MazeGen"
+# Error: COMP96_0117: Maze.vhd : (33, 24): Array type for "mazeArray" is not constrained.
+# Error: COMP96_0118: Maze.vhd : (81, 38): Keyword 'others' is not allowed in unconstrained array aggregate.
+# Error: COMP96_0118: Maze.vhd : (81, 27): Keyword 'others' is not allowed in unconstrained array aggregate.
+# Compile failure 3 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -work work -2002  $dsn/src/Maze.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd
+# Compile Entity "MazeGen"
+# Compile Architecture "MazeBehv" of Entity "MazeGen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -work work -2002  $dsn/src/Maze.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd
+# Compile Entity "MazeGen"
+# Compile Architecture "MazeBehv" of Entity "MazeGen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work work -2002  $dsn/src/Types.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Types.vhd
+# Compile Package "MazeTypes"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.0 [ms]
+# ULM: Warning: ULM_0021 Architecture `mazebehv' of entity `work.maze' is not up-to-date. Please recompile file `C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator/src/Maze.vhd'.
+# ULM: Warning: ULM_0021 Architecture `mazebehv' of entity `work.maze' is not up-to-date. Please recompile file `C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator/src/Maze.vhd'.
+# ULM: Warning: ULM_0021 Architecture `mazebehv' of entity `work.maze' is not up-to-date. Please recompile file `C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator/src/Maze.vhd'.
+# ULM: Warning: ULM_0021 Architecture `mazebehv' of entity `work.maze' is not up-to-date. Please recompile file `C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator/src/Maze.vhd'.
+acom -O3 -work work -2002  $dsn/src/TestBench/mazegen_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\TestBench\mazegen_TB.vhd
+# Compile Entity "mazegen_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mazegen_tb"
+# Compile Configuration "TESTBENCH_FOR_mazegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -work work -2002  $dsn/src/TestBench/mazegen_TB.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\TestBench\mazegen_TB.vhd
+# Compile Entity "mazegen_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "mazegen_tb"
+# Compile Configuration "TESTBENCH_FOR_mazegen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+mazegen_tb mazegen_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0013 Maze.vhd (74): Index 0 is out of range (80 to 0) of "stack".
+# ELAB2: Last instance before error: /UUT
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# Error: Fatal error occurred during simulation initialization.
+asim -O5 +access +r +m+mazegen_tb mazegen_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Fatal Error: ELAB2_0013 Maze.vhd (74): Index 0 is out of range (80 to 0) of "stack".
+# ELAB2: Last instance before error: /UUT
+# KERNEL: Error: E8005 : Kernel process initialization failed.
+# Error: Fatal error occurred during simulation initialization.
+acom -O3 -work work -2002  $dsn/src/Maze.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd
+# Compile Entity "MazeGen"
+# Compile Architecture "MazeBehv" of Entity "MazeGen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim -O5 +access +r +m+mazegen_tb mazegen_tb tb_architecture
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8103 kB (elbread=1023 elab2=6726 kernel=353 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\wave.asdb
+#  11:52 PM, Wednesday, December 25, 2024
+#  Simulation has been initialized
+#  Selected Top-Level: mazegen_tb (tb_architecture)
+# add wave -noreg {/UUT/mazePixelArray}
+# add wave -noreg {/UUT/mazeArray}
+# add wave -noreg {/UUT/state}
+# add wave -noreg {/UUT/nextState}
+# add wave -noreg {/UUT/stack}
+# add wave -noreg {/UUT/mapState}
+# add wave -noreg {/UUT/mapNextState}
+# add wave -noreg {/UUT/stackPointer}
+# add wave -noreg {/UUT/randomNum}
+# add wave -noreg {/UUT/pseudoRand}
+# add wave -noreg {/UUT/clk}
+# add wave -noreg {/UUT/reset}
+# add wave -noreg {/UUT/mazeOut}
+# KERNEL: Warning: "mazePixelArray" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "mazeArray" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "state" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "nextState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "stack" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "mapState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "mapNextState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "stackPointer" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "randomNum" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "pseudoRand" does not have read access. Use switch +access +r for this region.
+# 3 signal(s) traced.
+# add wave -noreg {/UUT/mazePixelArray}
+# add wave -noreg {/UUT/mazeArray}
+# add wave -noreg {/UUT/state}
+# add wave -noreg {/UUT/nextState}
+# add wave -noreg {/UUT/stack}
+# add wave -noreg {/UUT/mapState}
+# add wave -noreg {/UUT/mapNextState}
+# add wave -noreg {/UUT/stackPointer}
+# add wave -noreg {/UUT/randomNum}
+# add wave -noreg {/UUT/pseudoRand}
+# add wave -noreg {/UUT/clk}
+# add wave -noreg {/UUT/reset}
+# add wave -noreg {/UUT/mazeOut}
+# KERNEL: Warning: "mazePixelArray" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "mazeArray" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "state" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "nextState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "stack" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "mapState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "mapNextState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "stackPointer" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "randomNum" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "pseudoRand" does not have read access. Use switch +access +r for this region.
+# KERNEL: Signal '/UUT/clk' has already been traced
+# KERNEL: Signal '/UUT/reset' has already been traced
+# KERNEL: Signal '/UUT/mazeOut' has already been traced
+# 0 signal(s) traced.
+# add wave -noreg {/UUT/mazePixelArray}
+# add wave -noreg {/UUT/mazeArray}
+# add wave -noreg {/UUT/state}
+# add wave -noreg {/UUT/nextState}
+# add wave -noreg {/UUT/stack}
+# add wave -noreg {/UUT/mapState}
+# add wave -noreg {/UUT/mapNextState}
+# add wave -noreg {/UUT/stackPointer}
+# add wave -noreg {/UUT/randomNum}
+# add wave -noreg {/UUT/pseudoRand}
+# add wave -noreg {/UUT/clk}
+# add wave -noreg {/UUT/reset}
+# add wave -noreg {/UUT/mazeOut}
+# KERNEL: Warning: "mazePixelArray" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "mazeArray" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "state" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "nextState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "stack" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "mapState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "mapNextState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "stackPointer" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "randomNum" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "pseudoRand" does not have read access. Use switch +access +r for this region.
+# KERNEL: Signal '/UUT/clk' has already been traced
+# KERNEL: Signal '/UUT/reset' has already been traced
+# KERNEL: Signal '/UUT/mazeOut' has already been traced
+# 0 signal(s) traced.
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -work work -2002  $dsn/src/Maze.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd
+# Compile Entity "MazeGen"
+# Compile Architecture "MazeBehv" of Entity "MazeGen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8101 kB (elbread=1023 elab2=6726 kernel=351 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\wave.asdb
+#  11:54 PM, Wednesday, December 25, 2024
+#  Simulation has been initialized
+#  Selected Top-Level: mazegen_tb (tb_architecture)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+# add wave -noreg {/UUT/mazePixelArray}
+# add wave -noreg {/UUT/mazeArray}
+# add wave -noreg {/UUT/state}
+# add wave -noreg {/UUT/nextState}
+# add wave -noreg {/UUT/stack}
+# add wave -noreg {/UUT/mapState}
+# add wave -noreg {/UUT/mapNextState}
+# add wave -noreg {/UUT/stackPointer}
+# add wave -noreg {/UUT/randomNum}
+# add wave -noreg {/UUT/pseudoRand}
+# add wave -noreg {/UUT/clk}
+# add wave -noreg {/UUT/reset}
+# add wave -noreg {/UUT/mazeOut}
+# KERNEL: Warning: "mazePixelArray" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "state" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "nextState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Warning: "mapNextState" does not have read access. Use switch +access +r for this region.
+# KERNEL: Signal '/UUT/clk' has already been traced
+# KERNEL: Signal '/UUT/reset' has already been traced
+# KERNEL: Signal '/UUT/mazeOut' has already been traced
+# 6 signal(s) traced.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8101 kB (elbread=1023 elab2=6726 kernel=351 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\wave.asdb
+#  11:59 PM, Wednesday, December 25, 2024
+#  Simulation has been initialized
+#  Selected Top-Level: mazegen_tb (tb_architecture)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+acom -O3 -work work -2002  $dsn/src/Maze.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd
+# Compile Entity "MazeGen"
+# Compile Architecture "MazeBehv" of Entity "MazeGen"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 8102 kB (elbread=1023 elab2=6727 kernel=351 sdf=0)
+# KERNEL: ASDB file was created in location C:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\wave.asdb
+#  12:24 AM, Thursday, December 26, 2024
+#  Simulation has been initialized
+#  Selected Top-Level: mazegen_tb (tb_architecture)
+run 100 ns
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# RUNTIME: Fatal Error: RUNTIME_0047 Maze.vhd (161): Index 9 out of range (8 downto 0).
+# KERNEL: Time: 155 ns,  Iteration: 0,  Instance: /UUT,  Process: Genrate_Map_Process.
+# KERNEL: stopped at delta: 0 at time 155 ns.
+# Error: Fatal error occurred during simulation.
