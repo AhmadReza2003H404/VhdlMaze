@@ -1,6 +1,26 @@
 WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
-MESSAGE "File: c:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\TestBench\mazegen_TB.vhd" 
-MESSAGE "Compile Entity "mazegen_tb"" 
-MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "mazegen_tb"" 
-MESSAGE "Compile Configuration "TESTBENCH_FOR_mazegen"" 
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]" 
+MESSAGE "File: c:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd" 
+BEGINPROGRESS c:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd
+UPDATEPROGRESS 1
+MESSAGE "Compile Entity "MazeGen"" 
+UPDATEPROGRESS 2
+UPDATEPROGRESS 4
+MESSAGE "Compile Architecture "MazeBehv" of Entity "MazeGen"" 
+UPDATEPROGRESS 5
+UPDATEPROGRESS 6
+UPDATEPROGRESS 7
+UPDATEPROGRESS 8
+UPDATEPROGRESS 9
+UPDATEPROGRESS 10
+UPDATEPROGRESS 13
+UPDATEPROGRESS 14
+UPDATEPROGRESS 15
+UPDATEPROGRESS 16
+UPDATEPROGRESS 17
+UPDATEPROGRESS 19
+UPDATEPROGRESS 20
+UPDATEPROGRESS 86
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS c:\Users\AsusIran\Desktop\MazeGenerator\MazeGenerator\src\Maze.vhd
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]" 

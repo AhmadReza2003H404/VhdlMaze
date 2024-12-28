@@ -48,22 +48,26 @@ Active_lib=
 UCF=
 
 [Groups]
+TestBench=1
 
 [HierarchyViewer]
 SortInfo=u
-HierarchyInformation=mazegen_tb|tb_architecture|0
+HierarchyInformation=mazegen_tb2|tb_architecture|0 
 ShowHide=ShowTopLevel
 Selected=
 
 [Files]
 /Maze.vhd=-1
 /Types.vhd=-1
+TestBench/mazegen_TB.vhd=-1
+TestBench/mazegen_TB_runtest.do=-1
 /untitled.asdb=-1
 /untitled.awc=-1
 
 [Files.Data]
 .\src\Maze.vhd=VHDL Source Code
 .\src\Types.vhd=VHDL Source Code
+.\src\TestBench\mazegen_TB.vhd=VHDL Test Bench
+.\src\TestBench\mazegen_TB_runtest.do=Macro
 .\src\untitled.asdb=Accelerated Waveform File
 .\src\untitled.awc=Accelerated Waveform Configuration
-

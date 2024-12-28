@@ -1,60 +1,65 @@
-LIBRARY work;
-USE work.MazeTypes.ALL;
-LIBRARY ieee;
-USE ieee.NUMERIC_STD.ALL;
-USE ieee.std_logic_1164.ALL;
+library work;
+use work.MazeTypes.all;
+library ieee;
+use ieee.NUMERIC_STD.all;
+use ieee.std_logic_1164.all;
 
--- Add your library and packages declaration here ...
+	-- Add your library and packages declaration here ...
 
-ENTITY mazegen_tb IS
+entity mazegen_tb2 is
 	-- Generic declarations of the tested unit
-	GENERIC (
-		MAP_SCALE : POSITIVE := 640;
-		MAP_SIZE : POSITIVE := 9);
-END mazegen_tb;
+		generic(
+		BLOCK_SIZE : POSITIVE := 4;
+		WALL_SIZE : POSITIVE := 20;
+		MAP_SIZE : POSITIVE := 9 );
+end mazegen_tb2;
 
-ARCHITECTURE TB_ARCHITECTURE OF mazegen_tb IS
+architecture TB_ARCHITECTURE of mazegen_tb2 is
 	-- Component declaration of the tested unit
-	COMPONENT mazegen
-		GENERIC (
-			MAP_SIZE : POSITIVE := 9);
-		PORT (
-			clk : IN STD_LOGIC;
-			reset : IN STD_LOGIC;
-			mazeOut : OUT Maze(MAP_SIZE - 1 DOWNTO 0, MAP_SIZE - 1 DOWNTO 0));
-	END COMPONENT;
+	component mazegen
+		generic(
+		BLOCK_SIZE : POSITIVE := 4;
+		WALL_SIZE : POSITIVE := 20;
+		MAP_SIZE : POSITIVE := 9 );
+	port(
+		clk : in STD_LOGIC;
+		reset : in STD_LOGIC;
+		mazePixelOut : out MazePixel(((MAP_SIZE*BLOCK_SIZE))-1 downto 0,((MAP_SIZE*BLOCK_SIZE))-1 downto 0) );
+	end component;
 
 	-- Stimulus signals - signals mapped to the input and inout ports of tested entity
-	SIGNAL clk : STD_LOGIC := '0';
-	SIGNAL reset : STD_LOGIC := '1';
-	-- Observed signals - signals mapped to the output ports of tested entity
-	SIGNAL mazeOut : Maze(MAP_SIZE - 1 DOWNTO 0, MAP_SIZE - 1 DOWNTO 0);
+	signal clk : STD_LOGIC := '0';
+	signal reset : STD_LOGIC := '1';
+	signal mazePixelOut : MazePixel(((MAP_SIZE*BLOCK_SIZE))-1 downto 0,((MAP_SIZE*BLOCK_SIZE))-1 downto 0);
 
 	-- Add your code here ...
 
-BEGIN
+begin
 
 	-- Unit Under Test port map
 	UUT : mazegen
-	GENERIC MAP(
-		MAP_SIZE => MAP_SIZE
-	)
+		generic map (
+			BLOCK_SIZE => BLOCK_SIZE,
+			WALL_SIZE => WALL_SIZE,
+			MAP_SIZE => MAP_SIZE
+		)
 
-	PORT MAP(
-		clk => clk,
-		reset => reset,
-		mazeOut => mazeOut
-	);
-
-	-- Add your stimulus here ...
+		port map (
+			clk => clk,
+			reset => reset,
+			mazePixelOut => mazePixelOut
+		);
 	reset <= '0' after 0.5 ns;
 	clk <= not clk after 1 ns;
-END TB_ARCHITECTURE;
+	-- Add your stimulus here ...
 
-CONFIGURATION TESTBENCH_FOR_mazegen OF mazegen_tb IS
-	FOR TB_ARCHITECTURE
-		FOR UUT : mazegen
-			USE ENTITY work.mazegen(mazebehv);
-		END FOR;
-	END FOR;
-END TESTBENCH_FOR_mazegen;
+end TB_ARCHITECTURE;
+
+configuration TESTBENCH_FOR_mazegen of mazegen_tb is
+	for TB_ARCHITECTURE
+		for UUT : mazegen
+			use entity work.mazegen(mazebehv);
+		end for;
+	end for;
+end TESTBENCH_FOR_mazegen;
+

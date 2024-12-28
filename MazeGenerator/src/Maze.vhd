@@ -12,7 +12,6 @@ ENTITY MazeGen IS
     PORT (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
-        mazeOut : OUT Maze (MAP_SIZE - 6 DOWNTO 0, MAP_SIZE - 6 DOWNTO 0);
         mazePixelOut : OUT MazePixel (((MAP_SIZE * BLOCK_SIZE)) - 1 DOWNTO 0, ((MAP_SIZE * BLOCK_SIZE)) - 1 DOWNTO 0)
     );
 END ENTITY MazeGen;
@@ -37,7 +36,7 @@ ARCHITECTURE MazeBehv OF MazeGen IS
     SIGNAL stackPointer : INTEGER RANGE -1 TO 81;
     SIGNAL randomNum : INTEGER RANGE 0 TO 3;
     SIGNAL pseudoRand : STD_LOGIC_VECTOR(31 DOWNTO 0);
-
+    SIGNAL i,j: INTEGER;
 BEGIN
     PROCESS (clk)
         -- maximal length 32-bit xnor LFSR
@@ -336,49 +335,55 @@ BEGIN
         END IF;
     END PROCESS Genrate_Map_Process;
     Generate_Map_Pixel_Process : PROCESS (clk, reset)
-        VARIABLE x, y : INTEGER;
+    variable x,y : integer;
     BEGIN
         IF (reset = '1') THEN
             mazePixelArray <= (OTHERS => (OTHERS => '0'));
             mapPixelState <= NOT_INIT;
+            i <= 0;
+            j <= 0;
         ELSIF (clk'EVENT AND clk = '1') THEN
-            IF (mapPixelState = NOT_INIT) THEN
+            IF (mapPixelState = NOT_INIT and mapState = END_GENERATE) THEN
                 mazePixelArray <= (OTHERS => (OTHERS => '0'));
                 mapPixelState <= GENERATING;
+                i <= 0;
+                j <= 0;
             ELSIF (mapPixelState = GENERATING) THEN
-                FOR i IN ((MAP_SIZE * BLOCK_SIZE)) - 1 DOWNTO 0 LOOP
-                    FOR j IN ((MAP_SIZE * BLOCK_SIZE)) - 1 DOWNTO 0 LOOP
-                        x := i / BLOCK_SIZE;
-                        y := j / BLOCK_SIZE;
-                        IF ((i MOD BLOCK_SIZE < WALL_SIZE)) THEN
-                            IF (mazeArray(x, y)(3) = '0') THEN
-                                mazePixelArray(i, j) <= '1';
-                            END IF;
-                        END IF;
-                        IF ((i MOD BLOCK_SIZE > BLOCK_SIZE - WALL_SIZE)) THEN
-                            IF (mazeArray(x, y)(2) = '0') THEN
-                                mazePixelArray(i, j) <= '1';
-                            END IF;
-                        END IF;
-                        IF ((j MOD BLOCK_SIZE < WALL_SIZE)) THEN
-                            IF (mazeArray(x, y)(0) = '0') THEN
-                                mazePixelArray(i, j) <= '1';
-                            END IF;
-                        END IF;
-                        IF ((j MOD BLOCK_SIZE > BLOCK_SIZE - WALL_SIZE)) THEN
-                            IF (mazeArray(x, y)(1) = '0') THEN
-                                mazePixelArray(i, j) <= '1';
-                            END IF;
-                        END IF;
-                        IF (((i MOD BLOCK_SIZE < WALL_SIZE) OR (i MOD BLOCK_SIZE > BLOCK_SIZE - WALL_SIZE)) AND ((j MOD BLOCK_SIZE < WALL_SIZE) OR (j MOD BLOCK_SIZE > BLOCK_SIZE - WALL_SIZE))) THEN
-                            mazePixelArray(i, j) <= '1';
-                        END IF;
-                    END LOOP;
-                END LOOP;
+                IF(j = MAP_SIZE - 1) THEN
+                    i <= i + 1;
+                    j <= 0;
+                ELSE
+                    j <= j + 1; 
+                END IF;
+
+                x := i / BLOCK_SIZE;
+                y := j / BLOCK_SIZE;
+                IF ((i MOD BLOCK_SIZE < WALL_SIZE)) THEN
+                    IF (mazeArray(x, y)(3) = '0') THEN
+                        --  mazePixelArray(i, j) <= '1';
+                    END IF;
+                END IF;
+                IF ((i MOD BLOCK_SIZE > BLOCK_SIZE - WALL_SIZE)) THEN
+                    IF (mazeArray(x, y)(2) = '0') THEN
+                        --  mazePixelArray(i, j) <= '1';
+                    END IF;
+                END IF;
+                IF ((j MOD BLOCK_SIZE < WALL_SIZE)) THEN
+                    IF (mazeArray(x, y)(0) = '0') THEN
+                        --   mazePixelArray(i, j) <= '1';
+                    END IF;
+                END IF;
+                IF ((j MOD BLOCK_SIZE > BLOCK_SIZE - WALL_SIZE)) THEN
+                    IF (mazeArray(x, y)(1) = '0') THEN
+                        mazePixelArray(i, j) <= '1';
+                    END IF;
+                END IF;
+                IF (((i MOD BLOCK_SIZE < WALL_SIZE) OR (i MOD BLOCK_SIZE > BLOCK_SIZE - WALL_SIZE)) AND ((j MOD BLOCK_SIZE < WALL_SIZE) OR (j MOD BLOCK_SIZE > BLOCK_SIZE - WALL_SIZE))) THEN
+                    -- mazePixelArray(i, j) <= '1';
+                END IF;
                 mapPixelState <= END_GENERATE;
             END IF;
         END IF;
     END PROCESS Generate_Map_Pixel_Process;
-    mazeOut <= mazeArray;
     mazePixelOut <= mazePixelArray;
 END ARCHITECTURE MazeBehv;

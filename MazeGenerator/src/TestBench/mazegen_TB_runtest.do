@@ -6,6 +6,7 @@ wave
 wave -noreg clk
 wave -noreg reset
 wave -noreg mazeOut
+wave -noreg mazePixelOut
 # The following lines can be used for timing simulation
 # acom <backannotated_vhdl_file_name>
 # comp -include "$dsn\src\TestBench\mazegen_TB_tim_cfg.vhd" 
