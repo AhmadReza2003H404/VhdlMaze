@@ -1,4 +1,4 @@
-timestamp=1735160251465
+timestamp=1735379827568
 
 [maze]
 A/mazebehv=+21|./src/Maze.vhd|18|1*186658
@@ -10,54 +10,55 @@ M/mazebehv=M/MazeBehv 21|0|v80|1735157630333|./src/Maze.vhd|0*187498*0x460768450
 R=./src/Maze.vhd|7
 
 [mazegen]
-A/mazebehv=A/MazeBehv 21|./src/Maze.vhd|18|1*244364
+A/mazebehv=A/MazeBehv 21|./src/Maze.vhd|20|1*299316
 B/mazebehv=3*10050
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/mazebehv=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
-I=0*216508
-I/mazebehv=I/MazeBehv 0*299475
-M=11|0|v80|1735157895748|./src/Maze.vhd|0*216067*0xf5ef1c475e831f297290f9b8bc3669cc57c08a02|0*216436*0xab32bc1a2daf049573e14469f634e0e6
-M/mazebehv=M/MazeBehv 21|0|v80|1735160251382|./src/Maze.vhd|0*286353*0xa62c1d76c045ff1027bd0936424e81f10eea48cd|0*299391*0xb33770ff1c10522f9491560174ac8e6c
-R=./src/Maze.vhd|7
+I=0*418234
+I/mazebehv=I/MazeBehv 0*433044
+M=11|0|v80|1735379787638|./src/Maze.vhd|0*417667*0x7eec91440f21efe02500272e36c7a33ba7fb8ae7|0*418162*0xab32bc1a2daf049573e14469f634e0e6
+M/mazebehv=M/MazeBehv 21|0|v80|1735379787659|./src/Maze.vhd|0*418453*0xe34f665fa1191c6ddcd25d169503f73559e10248|0*432960*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/Maze.vhd|6
 
 [mazegen_tb]
-A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/mazegen_TB.vhd|16|1*226056
-B/tb_architecture=3*9438
+A/tb_architecture=A/TB_ARCHITECTURE 21|./src/TestBench/mazegen_TB.vhd|16|1*309039
+B/tb_architecture=3*21779
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 C/tb_architecture=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
 I=0*243308
-I/tb_architecture=I/TB_ARCHITECTURE 0*245967
-M=11|0|v80|1735158027310|./src/TestBench/mazegen_TB.vhd|0*242922*0x0f1ce49a1e199826f2be42073b6aa64b8b275ce6|0*243217*0xab32bc1a2daf049573e14469f634e0e6
-M/tb_architecture=M/TB_ARCHITECTURE 21|0|v80|1735158094032|./src/TestBench/mazegen_TB.vhd|0*245205*0x75f4e30c9425ac2e0292aa803cb8e371d42db0d4|0*245857*0xb33770ff1c10522f9491560174ac8e6c
+I/tb_architecture=I/TB_ARCHITECTURE 0*435652
+M=11|0|v80|1735379804133|./src/TestBench/mazegen_TB.vhd|0*242922*0x0f1ce49a1e199826f2be42073b6aa64b8b275ce6|0*243217*0xab32bc1a2daf049573e14469f634e0e6
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|v80|1735379827481|./src/TestBench/mazegen_TB.vhd|0*434946*0xc5d56a64c23b27c48918dcbe75a6124b5ac3741b|0*435542*0xb33770ff1c10522f9491560174ac8e6c
 R=./src/TestBench/mazegen_TB.vhd|9
 
 [mazetypes]
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
-E=1*212387
-I=0*215687
-M=3|0|v80|1735157890797|./src/Types.vhd|0*215382*0xa8ffbd766f2ddc5311a58c145725e9dd39c50512|0*215612*0xab32bc1a2daf049573e14469f634e0e6
+E=1*292767
+I=0*402617
+M=3|0|v80|1735379736552|./src/Types.vhd|0*402258*0xaeb95c5eac38f76eeb055b8cc22994b4e18875ef|0*402542*0xab32bc1a2daf049573e14469f634e0e6
 R=./src/Types.vhd|4
 
 [testbench_for_mazegen]
+B/testbench_for_mazegen=3*22373
 C=8.3.2120.sp1.14.3884  (Windows)|00000009789cd3f53756d0353230300200090601c1
-E=1*229008
-I=0*246648
-M=2|0|v80|1735158094039|./src/TestBench/mazegen_TB.vhd|0*246259*0x5eca39113d08a0c02a1cf7ca38a8e037d124fe81|0*246533*0xb33770ff1c10522f9491560174ac8e6c
-R=./src/TestBench/mazegen_TB.vhd|56
+E=1*311872
+I=0*436333
+M=2|0|v80|1735379827491|./src/TestBench/mazegen_TB.vhd|0*435944*0x8ea190628d8835030d21e152f72f119065a1e242|0*436218*0xb33770ff1c10522f9491560174ac8e6c
+R=./src/TestBench/mazegen_TB.vhd|54
 
 [~A]
-ModifyID=420
+ModifyID=522
 Version=73
 
 [~MFT]
-0=331|0work.mgf|299475|268496
-1=134|1work.mgf|244364|235744
-3=11|3work.mgf|10050|9438
+0=453|0work.mgf|436333|403592
+1=164|1work.mgf|311872|297549
+3=38|3work.mgf|22373|10849
 
 [~U]
 maze=Maze 11|0*200333|
-mazegen=MazeGen 11|0*215790|
+mazegen=MazeGen 11|0*417277|
 mazegen_tb=11|0*242771|
-mazetypes=MazeTypes 3|0*215044|0*215205
+mazetypes=MazeTypes 3|0*401805|0*402008
 testbench_for_mazegen=TESTBENCH_FOR_mazegen 2||
 

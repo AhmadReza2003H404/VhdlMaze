@@ -1,3 +1,2 @@
 .\src\Maze.vhd
 .\src\Types.vhd
-.\src\TestBench\mazegen_TB.vhd

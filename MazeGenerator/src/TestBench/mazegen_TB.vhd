@@ -17,7 +17,6 @@ ARCHITECTURE TB_ARCHITECTURE OF mazegen_tb IS
 	-- Component declaration of the tested unit
 	COMPONENT mazegen
 		GENERIC (
-			MAP_SCALE : POSITIVE := 640;
 			MAP_SIZE : POSITIVE := 9);
 		PORT (
 			clk : IN STD_LOGIC;
@@ -38,7 +37,6 @@ BEGIN
 	-- Unit Under Test port map
 	UUT : mazegen
 	GENERIC MAP(
-		MAP_SCALE => MAP_SCALE,
 		MAP_SIZE => MAP_SIZE
 	)
 

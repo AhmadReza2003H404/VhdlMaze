@@ -1,8 +1,8 @@
-420
-~E 1 "./src/Maze.vhd" 7 mazegen
-~A 1 "./src/Maze.vhd" 18 mazebehv
+522
+~E 1 "./src/Maze.vhd" 6 mazegen
+~A 1 "./src/Maze.vhd" 20 mazebehv
 ~E 1 "./src/Maze.vhd" 7 maze
 ~A 1 "./src/Maze.vhd" 18 mazebehv
 ~E 1 "./src/TestBench/mazegen_TB.vhd" 9 mazegen_tb
 ~A 1 "./src/TestBench/mazegen_TB.vhd" 16 tb_architecture
-~C 1 "./src/TestBench/mazegen_TB.vhd" 56 testbench_for_mazegen
+~C 1 "./src/TestBench/mazegen_TB.vhd" 54 testbench_for_mazegen
